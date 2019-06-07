@@ -103,7 +103,7 @@ ul,ol{
 }
 
 .favoritos{
-    padding: 5%;
+    padding: 5% 12%;
 }
 
 .favoritos h3{
@@ -119,4 +119,44 @@ ul,ol{
     width: 100px;
     height: 2px;
     margin: 2% auto;
+}
+
+.container-favoritos{
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(4,auto)/repeat(3,minmax(100px,200px));
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+}
+
+.favorito-title{
+    grid-column: 1/-1;
+}
+
+.favorito-sabor{
+    margin: 0;
+    width: 100%;
+    vertical-align: top;
+}
+
+.favorito-sabor img{
+    margin:0;
+    width: 100%;
+}
+
+.favorito-sabor h4{
+    text-align: center;
+    margin: 1em 0 .5em;
+    text-transform: uppercase;
+}
+
+.favorito-sabor .decoration-line{
+    width: 70%;
+    background: #0C99C1;
+}
+
+.favorito-sabor p{
+    font-size: .7em;
+    text-align: center;
+    padding: 0 12%;
 }
