@@ -2,7 +2,7 @@
     Amarillo:#FFF78F
     Azul Claro:#22B9CA
     Azul osuro:#0C99C1
-    Rosa:#F3OCD4
+    Rosa:#FDBDB3
 
     Fuentes:
 
@@ -15,6 +15,7 @@ body{
     margin:0;
     font-family: 'Noto Sans HK', sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6{
     margin: 0;
 }
@@ -30,12 +31,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .nav-var{
-    background-color: #0c99c1;
+    background-color: #0c9ac1b7;
     height: 3em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3em;
+    position: sticky;
+    top: 0;
 }
 
 .nav-var .marca{
@@ -160,4 +163,37 @@ ul,ol{
     font-size: .7em;
     text-align: center;
     padding: 0 12%;
+}
+
+.nosotros{
+    width: 100%;
+}
+
+.container-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    background-color: #ffbfb3;
+}
+
+.container-nosotros img{
+    width: 100%;
+    margin: 0;
+}
+
+.nosotros-text{
+    text-align: center;
+    padding: 0 6em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nosotros-text h3{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 40px;
+    margin-bottom: .5em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
