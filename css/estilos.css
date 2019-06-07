@@ -3,6 +3,12 @@
     Azul Claro:#22B9CA
     Azul osuro:#0C99C1
     Rosa:#F3OCD4
+
+    Fuentes:
+
+    font-family: 'Noto Sans HK', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Arsenal', sans-serif;
 */
 
 body{
@@ -85,11 +91,32 @@ ul,ol{
 .hero-text h1{
     font-size: 6em;
     font-family: 'Permanent Marker', cursive;
+    letter-spacing: .2em;
 }
 
 .hero-text h2{
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 900;
+    font-weight: bolder;
+    letter-spacing: 2px;
 }
 
+.favoritos{
+    padding: 5%;
+}
+
+.favoritos h3{
+    font-family: 'Arsenal', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+}
+
+.decoration-line{
+    background:black;
+    width: 100px;
+    height: 2px;
+    margin: 2% auto;
+}
