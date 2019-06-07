@@ -181,7 +181,7 @@ ul,ol{
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow: cover;
     object-fit: cover;
 }
 
@@ -200,4 +200,44 @@ ul,ol{
     margin-bottom: .5em;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.images-final{
+    height: auto;
+    background: #0C99C1;
+}
+
+.images-final h1{
+    padding: 1em 0;
+    color: white;
+    font-size: 6em;
+    font-family: 'Permanent Marker', cursive;
+    justify-content: center;
+    display: flex;
+}
+
+.image-overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.container-images{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    position: relative
+}
+
+.item-images{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.item-images:hover .image-overlay{
+    cursor: pointer;
+    display: none;
 }
