@@ -127,6 +127,7 @@ ul,ol{
     grid-template: repeat(4,auto)/repeat(3,minmax(100px,200px));
     grid-column-gap: 20px;
     grid-row-gap: 50px;
+    margin-bottom: 50px;
 }
 
 .favorito-title{
