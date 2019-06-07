@@ -1,0 +1,95 @@
+/* 
+    Amarillo:#FFF78F
+    Azul Claro:#22B9CA
+    Azul osuro:#0C99C1
+    Rosa:#F3OCD4
+*/
+
+body{
+    margin:0;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.ubicacion{
+    font-size: 18px;
+    height: 2.3em;
+    background: #111111;
+    color: white;
+    text-align: center;
+    line-height: 2.3em;
+    font-weight: 500;
+}
+
+.nav-var{
+    background-color: #0c99c1;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+.nav-var .marca{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 28px;
+}
+
+.nav-var .menu{
+    height: 100%;
+    display: flex;
+    text-align: center;
+    list-style: none;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-var a{
+    text-decoration: none;
+    color: white;
+    padding: 0 .7em;
+    font-weight: bolder;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    background: #FFF78F;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image{
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.hero-text{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+.hero-text h1{
+    font-size: 6em;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.hero-text h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
