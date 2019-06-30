@@ -30,23 +30,30 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
 }
 
-.nav-var{
+.ubicacion p{
+    margin: 0;
+}
+
+.ubicacion .u2{
+    display: none;
+}
+
+.nav-bar{
     background-color: #0c9ac1;
     height: 3em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 3em;
-    position: sticky;
-    top: 0;
+    flex:1;
 }
 
-.nav-var .marca{
+.nav-bar .marca{
     font-family: 'Permanent Marker', cursive;
     font-size: 28px;
 }
 
-.nav-var .menu{
+.nav-bar .menu{
     height: 100%;
     display: flex;
     text-align: center;
@@ -58,7 +65,7 @@ ul,ol{
     padding: 0;
 }
 
-.nav-var a{
+.nav-bar a{
     text-decoration: none;
     color: white;
     padding: 0 .7em;
@@ -77,9 +84,10 @@ ul,ol{
 }
 
 .hero-image{
-    height: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 50px 0;
     display: flex;
+    object-fit: contain;
 }
 
 .hero-text{
@@ -127,7 +135,7 @@ ul,ol{
 .container-favoritos{
     display: grid;
     justify-content: center;
-    grid-template: repeat(4,auto)/repeat(3,minmax(100px,200px));
+    grid-template: repeat(3,auto)/repeat(3,minmax(100px,200px));
     grid-column-gap: 20px;
     grid-row-gap: 50px;
     margin-bottom: 50px;
@@ -203,7 +211,7 @@ ul,ol{
 }
 
 .images-final{
-    height: auto;
+    /* height: auto; */
     background: #0C99C1;
 }
 
@@ -224,7 +232,7 @@ ul,ol{
 }
 
 .container-images{
-    height: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4,25%);
     position: relative
@@ -310,4 +318,159 @@ footer p{
 footer a{
     text-decoration: none;
     color: white;
+}
+
+.burger-button.fas{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0C99C1;
+    border-radius: 50%;
+    background-color: rgba(34, 185, 202,.95);;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    position: fixed;
+    z-index: 5;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+}
+
+/* ---------------------------RESPONSIVE TABLET---------------------------*/
+@media screen and (max-width: 1023px){
+    
+    /* .container-images{
+        height: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2, 1000px);
+    } */
+    .image-overlay{
+        height: 100%;
+    }
+    
+    .favorito-sabor h4{
+        font-size: 1.3em;
+    }
+    .favorito-sabor p{
+        font-size: 1em;
+    }
+    .contacto-item{
+        font-size:40px;
+    }
+    .contacto-item{
+        width: initial;
+    }
+}
+
+/* ---------------------------RESPONSIVE TABLET---------------------------*/
+@media screen and (max-width: 767px){
+    
+    .burger-button.fas{
+        display: block;
+    }
+
+    .nav-bar{
+        display: block;
+        height: auto;
+        text-align: center
+    }
+    .nav-bar .marca{
+        font-size: 34px;
+    }
+    .nav-bar .menu{
+        display: block;
+        text-align: center;
+        position: fixed;
+        background-color: rgba(12, 153, 193,.9);
+        z-index: 4;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 35px;
+        transition: .3s;
+    }
+    .menu li{
+        height: 100px;
+    }
+    .menu a{
+        justify-content: center;
+    }
+    .menu.is-active{
+        left: 0;
+    }
+    
+    .hero-text h1{
+        letter-spacing: initial;
+    }
+    .hero-text h2{
+        letter-spacing: initial;
+    }
+
+    .container-favoritos{
+        grid-template: repeat(4,auto)/repeat(2,minmax(100px,200px));
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .container-nosotros{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,534px);
+    }
+    .nosotros-text h3{
+        font-size: 50px;
+    }
+    .nosotros-text{
+        font-size: 1.3em;
+        width: initial;
+    }
+
+    .container-images{
+        height: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 100vh);
+    }
+
+    footer p{
+        font-size: 20px
+    }
+}
+
+/* ---------------------------RESPONSIVE CELULARES---------------------------*/
+@media screen and (max-width: 479px){
+    
+    .ubicacion{
+        height: auto;
+    }
+    .ubicacion .u1{
+        display: none;
+    }
+    .ubicacion .u2{
+        display: initial;
+    }
+
+    .hero-text{
+        font-size: 10px;
+    }
+    .hero-text h2{
+        -webkit-text-stroke: 1px black;
+    }
+
+    .container-favoritos{
+        grid-template: repeat(7,auto)/minmax(100px,200px);
+    }
+
+    .images-final h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 320px){
+
 }
